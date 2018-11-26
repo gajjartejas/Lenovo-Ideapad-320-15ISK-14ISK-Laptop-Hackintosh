@@ -30,6 +30,7 @@ Type | Spec | Status
 ---------|:---------:|----------
 Battery Status		| - | Working
 Brightness		| - | Working
+Sleep/Hibernate		| - | Unknown
 
 ## Modifications
 
