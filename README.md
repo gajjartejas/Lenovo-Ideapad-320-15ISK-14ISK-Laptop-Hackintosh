@@ -30,3 +30,11 @@ Type | Spec | Status
 ---------|:---------:|----------
 Battery Status		| - | Working
 Brightness		| - | Working
+
+## Modifications
+
+Type | Spec | Status
+---------|:---------:|----------
+D-Link DWA-131 Wireless N Nano USB Adapter (Black) 		| - | Working
+1KLICK WM1 3D Wireless Optical Mouse (Black)		| - | Working
+Universal for 9.5mm CD/DVD Drive Slot (for SSD and HDD)		| - | Working
