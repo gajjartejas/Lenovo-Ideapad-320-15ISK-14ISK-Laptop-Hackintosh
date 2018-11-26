@@ -7,17 +7,26 @@ Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
 ## About this Laptop
 
+## Hardware Status
 
-*** | *** |
----------|:---------:
-Computer		| Lenovo Ideapad 320-15ISK 80XH01DNIN   
-BIOS Version	| LENOVO Insyde EFI(4WCN29WW)
-CPU				| DualCore Intel Core i3, 2000 MHz (20 x 100)
-Chipset			| Intel Sunrise Point-LP, Intel Skylake-U
-Graphics		| Intel HD Graphics 520, NVIDIA GeForce 920MX (Using Intel GPU only)
-Audio			| Realtek ALC3240, Codec ID:10EC0230h / 17AA3809h
-Ethernet		| Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter
-WiFi			| Intel(R) Dual Band Wireless-AC 3165
-Bluetooth		| Intel(R) Wireless Bluetooth(R)
+Type | Spec | Status
+---------|:---------:|----------
+Computer		| Lenovo Ideapad 320-15ISK 80XH01DNIN   | Working
+BIOS Version	| LENOVO Insyde EFI(4WCN29WW) | Working
+CPU				| DualCore Intel Core i3, 2000 MHz (20 x 100) | Working
+Chipset			| Intel Sunrise Point-LP, Intel Skylake-U | Working
+Graphics		| Intel HD Graphics 520, NVIDIA GeForce 920MX (Using Intel GPU only) | Working
+Audio			| Realtek ALC3240, Codec ID:10EC0230h / 17AA3809h | Working
+Ethernet		| Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter | Working
+WiFi			| Intel(R) Dual Band Wireless-AC 3165 | Not Working
+Bluetooth		| Intel(R) Wireless Bluetooth(R) | Working
+Touchpad		| IC2 | Not Working
+Keyboard		| - | Working
+Webcam		| - | Working
 
+## Software Status
 
+Type | Spec | Status
+---------|:---------:|----------
+Battery Status		| - | Working
+Brightness		| - | Working
