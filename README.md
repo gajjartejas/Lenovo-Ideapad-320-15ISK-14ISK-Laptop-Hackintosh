@@ -1,7 +1,7 @@
 # Lenovo-Ideapad-320-15ISK-Laptop-Hackintosh
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
-![alt text](https://raw.githubusercontent.com/gajjartejas/Lenovo-Ideapad-320-15ISK-Laptop-Hackintosh/master/10.14.x/10.14.0/screenshot.png)
+![alt text](https://raw.githubusercontent.com/gajjartejas/Lenovo-Ideapad-320-15ISK-Laptop-Hackintosh/master/10.14.x/10.14.1/Screenshot.png)
 
 
 
