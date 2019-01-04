@@ -9,20 +9,20 @@ Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
 ## Hardware Status
 
-Type | Spec | Status
----------|:---------:|----------
-Computer		| Lenovo Ideapad 320-15ISK 80XH01DNIN   | Working
-BIOS Version	| LENOVO Insyde EFI(4WCN29WW) | Working
-CPU				| DualCore Intel Core i3, 2000 MHz (20 x 100) | Working
-Chipset			| Intel Sunrise Point-LP, Intel Skylake-U | Working
-Graphics		| Intel HD Graphics 520, NVIDIA GeForce 920MX (Using Intel GPU only) | Working
-Audio			| Realtek ALC3240, Codec ID:10EC0230h / 17AA3809h | Working
-Ethernet		| Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter | Working
-WiFi			| Intel(R) Dual Band Wireless-AC 3165 | Not Working
-Bluetooth		| Intel(R) Wireless Bluetooth(R) | Working
-Touchpad		| IC2 | Not Working
-Keyboard		| - | Working
-Webcam		| - | Working
+Type | Spec | Status | Link
+---------|:---------:|----------:|----------
+Computer		| Lenovo Ideapad 320-15ISK 80XH01DNIN   | Working | -
+BIOS Version	| LENOVO Insyde EFI(4WCN29WW) | Working | -
+CPU				| DualCore Intel Core i3, 2000 MHz (20 x 100) | Working | -
+Chipset			| Intel Sunrise Point-LP, Intel Skylake-U | Working | -
+Graphics		| Intel HD Graphics 520, NVIDIA GeForce 920MX (Using Intel GPU only) | Working | [Guide](https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/)
+Audio			| Realtek ALC3240, Codec ID:10EC0230h / 17AA3809h | Working | [Guide](https://github.com/acidanthera/AppleALC/wiki/Installation-and-usage)
+Ethernet		| Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter | Working | -
+WiFi			| Intel(R) Dual Band Wireless-AC 3165 | Not Working | -
+Bluetooth		| Intel(R) Wireless Bluetooth(R) | Working | -
+Touchpad		| IC2 | Not Working | [Guide](https://www.tonymacx86.com/threads/guide-acer-swift-3-i5-8250u-high-sierra.249160/)
+Keyboard		| - | Working | -
+Webcam		| - | Working | -
 
 ## Software Status
 
@@ -39,3 +39,25 @@ Type | Spec | Status
 D-Link DWA-131 Wireless N Nano USB Adapter (Black) 		| - | Working
 1KLICK WM1 3D Wireless Optical Mouse (Black)		| - | Working
 Universal for 9.5mm CD/DVD Drive Slot (for SSD and HDD)		| - | Working
+
+## Kext Used
+
+Kext | Link | Status
+---------|:---------:|----------
+ACPIBatteryManager.kext 		| - | Working
+ACPISensors.kext		| - | Working
+AppleALC.kext		| - | Working
+AppleBacklightFixup.kext		| - | Working
+AtherosE2200Ethernet.kext		| - | Working
+RealtekRTL8111.kext		| - | Working
+CPUSensors.kext		| - | Working
+FakeSMC.kext		| - | Working
+GPUSensors.kext		| - | Working
+IntelMausiEthernet.kext		| - | Working
+Lilu.kext		| - | Working
+WhateverGreen.kext		| - | Working
+LPCSensors.kext		| - | Working
+USBInjectAll.kext		| - | Working
+VoodooI2C.kext		| - | Working
+VoodooI2CHID.kext		| - | Working
+VoodooPS2Controller.kext		| - | Working
