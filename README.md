@@ -1,7 +1,7 @@
 # Lenovo-Ideapad-320-15ISK-Laptop-Hackintosh
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
-![alt text](https://raw.githubusercontent.com/gajjartejas/Lenovo-Ideapad-320-15ISK-Laptop-Hackintosh/master/10.14.x/10.14.2/Screenshot.png)
+![alt text](https://raw.githubusercontent.com/gajjartejas/Lenovo-Ideapad-320-15ISK-Laptop-Hackintosh/master/10.14.x/10.14.3/Screenshot.png)
 
 
 
@@ -20,7 +20,7 @@ Audio			| Realtek ALC3240, Codec ID:10EC0230h / 17AA3809h | Working | [Guide](ht
 Ethernet		| Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter | Working | -
 WiFi			| Intel(R) Dual Band Wireless-AC 3165 | Not Working | -
 Bluetooth		| Intel(R) Wireless Bluetooth(R) | Working | -
-Touchpad		| IC2 | Working | [Guide](https://www.tonymacx86.com/threads/guide-acer-swift-3-i5-8250u-high-sierra.249160/)
+Touchpad		| I2C | Working | [Guide](https://www.tonymacx86.com/threads/guide-acer-swift-3-i5-8250u-high-sierra.249160/)
 Keyboard		| - | Working | -
 Webcam		| - | Working | -
 
