@@ -40,3 +40,5 @@
  now go to Clover Configurator->Graphics and make a sure Inject ATI, Inject Intel and  Inject NVidia is unchecked. See below screenshots:
  ![alt text](https://raw.githubusercontent.com/gajjartejas/Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh/master/assets/Screenshots/clover_graphics.png)
  
+   ## Fix Touchpad
+   Please see detailed guide from [here](./10.14.x/10.14.3/Touchpad-Guide.md)
