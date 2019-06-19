@@ -3,7 +3,7 @@ Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
 macOS Mojave 10.15.5            |  macOS Catalina Beta 1
 :-------------------------:|:-------------------------:
-![alt text](https://raw.githubusercontent.com/gajjartejas/Lenovo-Ideapad-320-15ISK-Laptop-Hackintosh/master/10.14.x/10.14.5/Screenshot.png)  |  ![alt text](https://raw.githubusercontent.com/gajjartejas/Lenovo-Ideapad-320-15ISK-Laptop-Hackintosh/master/10.15.x/10.14.beta1/Screenshot.png)
+![alt text](https://raw.githubusercontent.com/gajjartejas/Lenovo-Ideapad-320-15ISK-Laptop-Hackintosh/master/10.14.x/10.14.5/Screenshot.png)  |  ![alt text](https://raw.githubusercontent.com/gajjartejas/Lenovo-Ideapad-320-15ISK-Laptop-Hackintosh/master/10.15.x/10.15.beta1/Screenshot.png)
 
 
 
