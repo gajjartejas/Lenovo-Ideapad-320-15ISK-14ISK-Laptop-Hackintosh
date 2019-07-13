@@ -66,6 +66,7 @@ For DSDT.dsl, wait for the file to load completely
 First apply Windows 10 Patch
 
 Second you have to find below Scope:
+Diff Preview: http://www.mergely.com/eOIVp4k6/?vp=1
  ```
  Scope (_SB.PCI0.I2C0)
     {
@@ -360,7 +361,7 @@ Scope (_SB.PCI0.I2C0)
                     "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
                     )
                     {   // Pin list
-                        0x0000
+                        0x003F
                     }
             })
             Name (SBFI, ResourceTemplate ()
@@ -481,7 +482,7 @@ Scope (_SB.PCI0.I2C0)
                 Return (0x0F)
             }
 
-            Method (XDSM, 4, NotSerialized)
+            Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
                 If (LEqual (Arg0, ToUUID ("3cdff6f7-4267-4555-ad05-b30a3d8938de") /* HID I2C Device */))
                 {
