@@ -2,9 +2,10 @@
 #  Installation
 
 ### Add the following kexts
-- [VoodooPS2Controller.kext](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)
+- [VoodooPS2Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller) - If you don't have this, no keyboard and no trackpad. We'll change it later to VoodooI2C, but for now you'll need to use this (works kinda jerky on trackpad) or connect external Keyboard/mouse
+- [VoodooI2C](https://github.com/alexandred/VoodooI2C) - Only VoodooI2C.kext and VoodooI2CELAN.kext is required
 
-If you don't have this, no keyboard and no trackpad. We'll change it later to VoodooI2C, but for now you'll need to use this (works kinda jerky on trackpad) or connect external Keyboard/mouse
+
 
 ### Tools Used
 - [Clover Configurator](http://mackie100projects.altervista.org/download-clover-configurator/)
@@ -59,9 +60,526 @@ Open all of your dsl files from your DSDT folder.
 You should have pretty much the same files as me if you have the same laptop.
 
 For DSDT.dsl, wait for the file to load completely
-Apply Brightness fix patch
-Apply VoodooI2C GPIO Patch and Windows 10 Patch
 
+First apply Windows 10 Patch
+
+Second you have to find below Scope:
+ ```
+ Scope (_SB.PCI0.I2C0)
+    {
+        Device (TPD0)
+        {
+            Name (_ADR, One)  // _ADR: Address
+            Name (_HID, "SYNA2B33")  // _HID: Hardware ID
+            Name (_CID, "PNP0C50")  // _CID: Compatible ID
+            Name (_UID, 0x0A)  // _UID: Unique ID
+            Name (SBFS, ResourceTemplate ()
+            {
+                I2cSerialBusV2 (0x002C, ControllerInitiated, 0x00061A80,
+                    AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                    0x00, ResourceConsumer, _Y1D, Exclusive,
+                    )
+            })
+            Name (SBFB, ResourceTemplate ()
+            {
+                I2cSerialBusV2 (0x0015, ControllerInitiated, 0x00061A80,
+                    AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                    0x00, ResourceConsumer, , Exclusive,
+                    )
+            })
+            Name (SBFF, ResourceTemplate ()
+            {
+                I2cSerialBusV2 (0x0038, ControllerInitiated, 0x00061A80,
+                    AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                    0x00, ResourceConsumer, , Exclusive,
+                    )
+            })
+            Name (SBFG, ResourceTemplate ()
+            {
+                GpioInt (Level, ActiveLow, Exclusive, PullDefault, 0x0000,
+                    "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
+                    )
+                    {   // Pin list
+                        0x003F
+                    }
+            })
+            Name (SBFI, ResourceTemplate ()
+            {
+                Interrupt (ResourceConsumer, Level, ActiveLow, Exclusive, ,, _Y1E)
+                {
+                    0x0000006F,
+                }
+            })
+            CreateWordField (SBFS, \_SB.PCI0.I2C0.TPD0._Y1D._ADR, BADR)  // _ADR: Address
+            CreateDWordField (SBFS, \_SB.PCI0.I2C0.TPD0._Y1D._SPE, SPED)  // _SPE: Speed
+            CreateDWordField (SBFI, \_SB.PCI0.I2C0.TPD0._Y1E._INT, INT2)  // _INT: Interrupts
+            CreateWordField (SBFG, 0x17, INT1)
+            Method (_INI, 0, NotSerialized)  // _INI: Initialize
+            {
+                If (LEqual (TPTY, 0x02))
+                {
+                    Store ("SYNA2B33", _HID)
+                    Store (0x2C, BADR)
+                }
+
+                If (LEqual (TPTY, One))
+                {
+                    Store ("ELAN0608", _HID)
+                    Store (0x15, BADR)
+                }
+
+                If (LEqual (TPTY, 0x03))
+                {
+                    Store ("FTCS1000", _HID)
+                    Store (0x38, BADR)
+                }
+
+                If (LLess (OSYS, 0x07DC))
+                {
+                    SRXO (0x0202000F, One)
+                }
+
+                Store (GNUM (0x0202000F), INT1)
+                Store (INUM (0x0202000F), INT2)
+                If (LEqual (SDM0, Zero))
+                {
+                    SHPO (0x0202000F, One)
+                }
+            }
+
+            Method (_CRS, 0, Serialized)  // _CRS: Current Resource Settings
+            {
+                If (LGreaterEqual (OSYS, 0x07DC))
+                {
+                    If (LEqual (TPTY, One))
+                    {
+                        Store ("ELAN0608", _HID)
+                        Name (SBFB, ResourceTemplate ()
+                        {
+                            I2cSerialBusV2 (0x0015, ControllerInitiated, 0x00061A80,
+                                AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                                0x00, ResourceConsumer, , Exclusive,
+                                )
+                        })
+                    }
+
+                    If (LEqual (TPTY, 0x02))
+                    {
+                        Store ("SYNA2B33", _HID)
+                        Name (SBFS, ResourceTemplate ()
+                        {
+                            I2cSerialBusV2 (0x002C, ControllerInitiated, 0x00061A80,
+                                AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                                0x00, ResourceConsumer, , Exclusive,
+                                )
+                        })
+                    }
+
+                    If (LEqual (TPTY, 0x03))
+                    {
+                        Store ("FTCS1000", _HID)
+                        Name (SBFF, ResourceTemplate ()
+                        {
+                            I2cSerialBusV2 (0x0038, ControllerInitiated, 0x00061A80,
+                                AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                                0x00, ResourceConsumer, , Exclusive,
+                                )
+                        })
+                    }
+
+                    Name (SBFI, ResourceTemplate ()
+                    {
+                        Interrupt (ResourceConsumer, Level, ActiveLow, Exclusive, ,, _Y1F)
+                        {
+                            0x00000000,
+                        }
+                    })
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C0.TPD0._CRS._Y1F._INT, INT2)  // _INT: Interrupts
+                    Store (INUM (0x0202000F), INT2)
+                    If (LEqual (TPTY, One))
+                    {
+                        Return (ConcatenateResTemplate (SBFB, SBFI))
+                    }
+
+                    If (LEqual (TPTY, 0x02))
+                    {
+                        Return (ConcatenateResTemplate (SBFS, SBFI))
+                    }
+
+                    If (LEqual (TPTY, 0x03))
+                    {
+                        Return (ConcatenateResTemplate (SBFF, SBFI))
+                    }
+                }
+
+                Return (SBFI)
+            }
+
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                Return (0x0F)
+            }
+
+            Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+            {
+                If (LEqual (Arg0, ToUUID ("3cdff6f7-4267-4555-ad05-b30a3d8938de") /* HID I2C Device */))
+                {
+                    If (LEqual (Arg2, Zero))
+                    {
+                        If (LEqual (Arg1, One))
+                        {
+                            Return (Buffer (One)
+                            {
+                                 0x03                                           
+                            })
+                        }
+                        Else
+                        {
+                            Return (Buffer (One)
+                            {
+                                 0x00                                           
+                            })
+                        }
+                    }
+
+                    If (LEqual (Arg2, One))
+                    {
+                        If (LEqual (TPTY, 0x02))
+                        {
+                            Return (0x20)
+                        }
+
+                        If (LEqual (TPTY, One))
+                        {
+                            Return (One)
+                        }
+
+                        If (LEqual (TPTY, 0x03))
+                        {
+                            Return (One)
+                        }
+                    }
+                }
+                ElseIf (LEqual (Arg0, ToUUID ("ef87eb82-f951-46da-84ec-14871ac6f84b")))
+                {
+                    If (LEqual (Arg2, Zero))
+                    {
+                        If (LEqual (Arg1, One))
+                        {
+                            Return (Buffer (One)
+                            {
+                                 0x03                                           
+                            })
+                        }
+                    }
+
+                    If (LEqual (Arg2, One))
+                    {
+                        If (LEqual (TPTY, One))
+                        {
+                            Store ("ELAN0608", _HID)
+                            Return (ConcatenateResTemplate (SBFB, SBFG))
+                        }
+
+                        If (LEqual (TPTY, 0x02))
+                        {
+                            Store ("SYNA2B33", _HID)
+                            Return (ConcatenateResTemplate (SBFS, SBFG))
+                        }
+
+                        If (LEqual (TPTY, 0x03))
+                        {
+                            Store ("FTCS1000", _HID)
+                            Return (ConcatenateResTemplate (SBFF, SBFG))
+                        }
+                    }
+
+                    Return (Buffer (One)
+                    {
+                         0x00                                           
+                    })
+                }
+                Else
+                {
+                    Return (Buffer (One)
+                    {
+                         0x00                                           
+                    })
+                }
+            }
+
+            Method (TPRD, 0, Serialized)
+            {
+                Return (^^^LPCB.EC0.ECTP)
+            }
+
+            Method (TPWR, 1, Serialized)
+            {
+                Store (Arg0, ^^^LPCB.EC0.ECTP)
+            }
+        }
+    }
+```
+
+and replace with this:
+```
+Scope (_SB.PCI0.I2C0)
+    {
+        Device (TPD0)
+        {
+            Name (_ADR, One)  // _ADR: Address
+            Name (_HID, "SYNA2B33")  // _HID: Hardware ID
+            Name (_CID, "PNP0C50")  // _CID: Compatible ID
+            Name (_UID, 0x0A)  // _UID: Unique ID
+            Name (SBFS, ResourceTemplate ()
+            {
+                I2cSerialBusV2 (0x002C, ControllerInitiated, 0x00061A80,
+                    AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                    0x00, ResourceConsumer, _Y1D, Exclusive,
+                    )
+            })
+            Name (SBFB, ResourceTemplate ()
+            {
+                I2cSerialBusV2 (0x0015, ControllerInitiated, 0x00061A80,
+                    AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                    0x00, ResourceConsumer, , Exclusive,
+                    )
+            })
+            Name (SBFF, ResourceTemplate ()
+            {
+                I2cSerialBusV2 (0x0038, ControllerInitiated, 0x00061A80,
+                    AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                    0x00, ResourceConsumer, , Exclusive,
+                    )
+            })
+            Name (SBFG, ResourceTemplate ()
+            {
+                GpioInt (Level, ActiveLow, Exclusive, PullDefault, 0x0000,
+                    "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
+                    )
+                    {   // Pin list
+                        0x0000
+                    }
+            })
+            Name (SBFI, ResourceTemplate ()
+            {
+                Interrupt (ResourceConsumer, Level, ActiveLow, Exclusive, ,, _Y1E)
+                {
+                    0x0000006F,
+                }
+            })
+            CreateWordField (SBFS, \_SB.PCI0.I2C0.TPD0._Y1D._ADR, BADR)  // _ADR: Address
+            CreateDWordField (SBFS, \_SB.PCI0.I2C0.TPD0._Y1D._SPE, SPED)  // _SPE: Speed
+            CreateDWordField (SBFI, \_SB.PCI0.I2C0.TPD0._Y1E._INT, INT2)  // _INT: Interrupts
+            CreateWordField (SBFG, 0x17, INT1)
+            Method (_INI, 0, NotSerialized)  // _INI: Initialize
+            {
+                If (LEqual (TPTY, 0x02))
+                {
+                    Store ("SYNA2B33", _HID)
+                    Store (0x2C, BADR)
+                }
+
+                If (LEqual (TPTY, One))
+                {
+                    Store ("ELAN0608", _HID)
+                    Store (0x15, BADR)
+                }
+
+                If (LEqual (TPTY, 0x03))
+                {
+                    Store ("FTCS1000", _HID)
+                    Store (0x38, BADR)
+                }
+
+                If (LLess (OSYS, 0x07DC))
+                {
+                    SRXO (0x0202000F, One)
+                }
+
+                Store (GNUM (0x0202000F), INT1)
+                Store (INUM (0x0202000F), INT2)
+                If (LEqual (SDM0, Zero))
+                {
+                    SHPO (0x0202000F, One)
+                }
+            }
+
+            Method (_CRS, 0, Serialized)  // _CRS: Current Resource Settings
+            {
+                If (LGreaterEqual (OSYS, 0x07DC))
+                {
+                    If (LEqual (TPTY, One))
+                    {
+                        Store ("ELAN0608", _HID)
+                        Name (SBFB, ResourceTemplate ()
+                        {
+                            I2cSerialBusV2 (0x0015, ControllerInitiated, 0x00061A80,
+                                AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                                0x00, ResourceConsumer, , Exclusive,
+                                )
+                        })
+                    }
+
+                    Return (ConcatenateResTemplate (SBFB, SBFG))
+                    If (LEqual (TPTY, 0x02))
+                    {
+                        Store ("SYNA2B33", _HID)
+                        Name (SBFS, ResourceTemplate ()
+                        {
+                            I2cSerialBusV2 (0x002C, ControllerInitiated, 0x00061A80,
+                                AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                                0x00, ResourceConsumer, , Exclusive,
+                                )
+                        })
+                    }
+
+                    If (LEqual (TPTY, 0x03))
+                    {
+                        Store ("FTCS1000", _HID)
+                        Name (SBFF, ResourceTemplate ()
+                        {
+                            I2cSerialBusV2 (0x0038, ControllerInitiated, 0x00061A80,
+                                AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                                0x00, ResourceConsumer, , Exclusive,
+                                )
+                        })
+                    }
+
+                    Name (SBFI, ResourceTemplate ()
+                    {
+                        Interrupt (ResourceConsumer, Level, ActiveLow, Exclusive, ,, _Y1F)
+                        {
+                            0x00000000,
+                        }
+                    })
+                    CreateDWordField (SBFI, \_SB.PCI0.I2C0.TPD0._CRS._Y1F._INT, INT2)  // _INT: Interrupts
+                    Store (INUM (0x0202000F), INT2)
+                    If (LEqual (TPTY, One))
+                    {
+                        Return (ConcatenateResTemplate (SBFB, SBFI))
+                    }
+
+                    If (LEqual (TPTY, 0x02))
+                    {
+                        Return (ConcatenateResTemplate (SBFS, SBFI))
+                    }
+
+                    If (LEqual (TPTY, 0x03))
+                    {
+                        Return (ConcatenateResTemplate (SBFF, SBFI))
+                    }
+                }
+
+                Return (SBFI)
+            }
+
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                Return (0x0F)
+            }
+
+            Method (XDSM, 4, NotSerialized)
+            {
+                If (LEqual (Arg0, ToUUID ("3cdff6f7-4267-4555-ad05-b30a3d8938de") /* HID I2C Device */))
+                {
+                    If (LEqual (Arg2, Zero))
+                    {
+                        If (LEqual (Arg1, One))
+                        {
+                            Return (Buffer (One)
+                            {
+                                 0x03                                           
+                            })
+                        }
+                        Else
+                        {
+                            Return (Buffer (One)
+                            {
+                                 0x00                                           
+                            })
+                        }
+                    }
+
+                    If (LEqual (Arg2, One))
+                    {
+                        If (LEqual (TPTY, 0x02))
+                        {
+                            Return (0x20)
+                        }
+
+                        If (LEqual (TPTY, One))
+                        {
+                            Return (One)
+                        }
+
+                        If (LEqual (TPTY, 0x03))
+                        {
+                            Return (One)
+                        }
+                    }
+                }
+                ElseIf (LEqual (Arg0, ToUUID ("ef87eb82-f951-46da-84ec-14871ac6f84b")))
+                {
+                    If (LEqual (Arg2, Zero))
+                    {
+                        If (LEqual (Arg1, One))
+                        {
+                            Return (Buffer (One)
+                            {
+                                 0x03                                           
+                            })
+                        }
+                    }
+
+                    If (LEqual (Arg2, One))
+                    {
+                        If (LEqual (TPTY, One))
+                        {
+                            Store ("ELAN0608", _HID)
+                            Return (ConcatenateResTemplate (SBFB, SBFG))
+                        }
+
+                        If (LEqual (TPTY, 0x02))
+                        {
+                            Store ("SYNA2B33", _HID)
+                            Return (ConcatenateResTemplate (SBFS, SBFG))
+                        }
+
+                        If (LEqual (TPTY, 0x03))
+                        {
+                            Store ("FTCS1000", _HID)
+                            Return (ConcatenateResTemplate (SBFF, SBFG))
+                        }
+                    }
+
+                    Return (Buffer (One)
+                    {
+                         0x00                                           
+                    })
+                }
+                Else
+                {
+                    Return (Buffer (One)
+                    {
+                         0x00                                           
+                    })
+                }
+            }
+
+            Method (TPRD, 0, Serialized)
+            {
+                Return (^^^LPCB.EC0.ECTP)
+            }
+
+            Method (TPWR, 1, Serialized)
+            {
+                Store (Arg0, ^^^LPCB.EC0.ECTP)
+            }
+        }
+    }
+```
+    
 Compile and if no errors, save the file as AML file (replace if needed).
 Copy ONLY EDITED (don't copy if you didn't replace anything) files from DSDT folder to EFI/CLOVER/ACPI/patched
 
