@@ -1,11 +1,11 @@
 
 #  Installation
 
-![alt text](https://raw.githubusercontent.com/gajjartejas/Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh/master/assets/Screenshots/touchpad_setting_panel.png)
+![alt text](assets/Screenshots/touchpad_setting_panel.png)
 
 ### Add the following kexts
 - [VoodooPS2Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller) - If you don't have this, no keyboard and no trackpad. We'll change it later to VoodooI2C, but for now you'll need to use this (works kinda jerky on trackpad) or connect external Keyboard/mouse
-- [VoodooI2C](https://github.com/alexandred/VoodooI2C) - Only VoodooI2C.kext and VoodooI2CELAN.kext is required
+- [VoodooI2C](https://github.com/alexandred/VoodooI2C) - Only VoodooI2C.kext and VoodooI2CELAN.kext(Satellite kext) is required
 
 
 
