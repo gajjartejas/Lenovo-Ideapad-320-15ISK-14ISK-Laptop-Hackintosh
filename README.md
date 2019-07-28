@@ -3,7 +3,7 @@ Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
 macOS Mojave 10.15.5            |  macOS Catalina Beta 1
 :-------------------------:|:-------------------------:
-![alt text](10.14.x/10.14.5/Screenshot.png)  |  ![alt text](10.15.x/10.15.beta1/screenshot.png)
+![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.beta1/screenshot.png)
 
 
 
@@ -29,10 +29,10 @@ Audio			| Realtek ALC3240, Codec ID:10EC0230h / 17AA3809h | Working | [Guide](ht
 Ethernet		| Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter | Working | -
 WiFi			| Intel(R) Dual Band Wireless-AC 3165 | Not Working | -
 Bluetooth		| Intel(R) Wireless Bluetooth(R) | Working | -
-Touchpad		| I2C | Working | [Guide](Touchpad-Guide.md)
+Touchpad		| I2C ELAN0608 | Working | [Guide](Touchpad-Guide.md)
 Keyboard		| - | Working | -
-Webcam		| - | Working | -
-
+Webcam		| Ven id: 0x04f2(Chicony Electronics Co.,Ltd.) Product id: 0xb5d8| Working | -
+Battery		|   Serial Number: L16M2PB2- 1229 Manufacturer: SMP Device Name:	L16M2PB2 | Working | -
 ## Software Status
 
 Type | Spec | Status
