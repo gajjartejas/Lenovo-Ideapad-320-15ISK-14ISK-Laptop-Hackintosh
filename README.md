@@ -29,7 +29,7 @@ Audio			| Realtek ALC3240, Codec ID:10EC0230h / 17AA3809h | Working | [Guide](ht
 Ethernet		| Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter | Working | -
 WiFi			| Intel(R) Dual Band Wireless-AC 3165 | Not Working | -
 Bluetooth		| Intel(R) Wireless Bluetooth(R) | Working | -
-Touchpad		| I2C | Working | [Guide](10.14.x/10.14.3/Touchpad-Guide.md)
+Touchpad		| I2C | Working | [Guide](Touchpad-Guide.md)
 Keyboard		| - | Working | -
 Webcam		| - | Working | -
 
