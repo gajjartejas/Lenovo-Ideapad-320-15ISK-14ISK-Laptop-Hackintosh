@@ -3,6 +3,25 @@
 
 ![alt text](assets/Screenshots/touchpad_setting_panel.png)
 
+### Properties
+```
+HARDWARE IDS
+ACPI\VEN_ELAN&DEV_0608
+ACPI\ELAN0608
+*ELAN0608
+
+COMPATIABLE IDS
+ACPI\PNP0C50
+PNP0C50
+
+BIOS DEVICE NAME
+\_SB.PCI0.I2C0.TPD0
+
+CHILDREN
+HID\ELAN0608&Col01\5&17134a85&0&0000
+HID\ELAN0608&Col02\5&17134a85&0&0001
+
+```
 ### Add the following kexts
 - [VoodooPS2Controller](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller) - If you don't have this, no keyboard and no trackpad. We'll change it later to VoodooI2C, but for now you'll need to use this (works kinda jerky on trackpad) or connect external Keyboard/mouse
 - [VoodooI2C](https://github.com/alexandred/VoodooI2C) - Only VoodooI2C.kext and VoodooI2CELAN.kext(Satellite kext) is required
