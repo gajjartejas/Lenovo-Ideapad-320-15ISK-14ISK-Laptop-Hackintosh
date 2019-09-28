@@ -1,0 +1,42 @@
+# Some suggestions:
+
+TLDR; WARNING: DON'T BUY DW1820A
+
+WiFi is a headache. Recently I have brought Dell DW1820A wireless M.2 adaptor from AliExpress but sadly not properly working with Mojave. Generally, DW1820A is 3 types of card available. I choose the wrong part no, which is not working properly. There is kernel panic with it. If you really want to buy just buy the 0VW3T3 part. Pro tip doesn't buy it from AliExpress thy will always sent incorrect part no.
+
+ More guide is here: https://osxlatitude.com/forums/topic/11322-broadcom-bcm4350-cards-under-high-sierramojave/
+
+
+# Supproted M.2 (A/E) cards
+1. DW1560 (BCM94352Z- 867Mbps - BT4.0, pricier, I don't see why would you go with this card if the above is cheaper)
+
+2. DW1830 (BCM94360 - 1300Mbps - BT4.0, priciest, needs 3 antennas to work to its full potential, works with just 2 tho, LARGE footprint, and I don't think it would fit there)
+
+# Currently I am Using
+## CARD: 
+New BCM94360CS2 Wireless WIFI Bluetooth 4.0 Airport Card For Macbook Air 11" A1465 13" A1466 2013 MD711LL/A MD760 BCM94360CS2AX
+[AliExpress Link](https://www.aliexpress.com/item/32767593738.html)
+
+Price: Rs 1,194.53, Around USD: $17.00
+
+## ADAPTOR: 
+A / E key NGFF M.2 Adapter for Macbook BCM94360CS2 BCM943602CS BCM94360CD BCM943602CDP BCM94360CSAX WiFi Wireless Network card
+[AliExpress Link](https://www.aliexpress.com/item/4000024226296.html)
+
+Price: Rs 962.14 X1, Around USD: $14.00
+
+Total is only 31.00 USD pretty cheaper than DW1830 and DW1560!
+
+
+# Some Screenshots of BCM94360CS2 and Adaptor
+
+
+BCM94360CS2AX Card           |  Adaptor
+:-------------------------:|:-------------------------:
+![alt text](/assets/Screenshots/wifi_card.jpg)  |  ![alt text](/assets/Screenshots/wifi_adaptor.jpg)
+
+
+WiFi           |  Bluetooth
+:-------------------------:|:-------------------------:
+![alt text](/assets/Screenshots/wifi_list.png)  |  ![alt text](/assets/Screenshots/ble_list.png)
+![alt text](/assets/Screenshots/wifi_info.png)  |  ![alt text](/assets/Screenshots/ble_info.png)
