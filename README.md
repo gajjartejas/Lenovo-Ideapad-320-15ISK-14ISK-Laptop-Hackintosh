@@ -14,7 +14,7 @@ Go to [INSTALLATION_GUIDE_BEGINNERS.md](INSTALLATION_GUIDE_BEGINNERS.md)(**For b
 
 Go to [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)(**For advanced user only**) for detailed guide.
 
-Go to [INSTALLATION_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported WiFi adapters and buying guide**) for detailed guide.
+Go to [INWIRELESS_CARD_BUYING_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported WiFi adapters and buying guide**) for detailed guide.
 
 ## About this Laptop
 
