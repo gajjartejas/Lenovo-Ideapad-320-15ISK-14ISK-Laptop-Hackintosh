@@ -1,11 +1,16 @@
 # Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
-macOS Mojave 10.15.5            |  macOS Catalina Beta 1
+macOS Mojave 10.15.5            |  macOS Catalina 10.15.0
 :-------------------------:|:-------------------------:
-![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.beta1/screenshot.png)
+![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15/screenshot.png)
 
 
+
+## macOS Mojave to Catalina direct upgrade note:
+ 1. Download latest [Clover](10.15.x/10.15/CLOVER.zip) and overwrite with existing one
+ 2. Update all kexts to latest version
+ 3. Use `lilucpu=8` for Skylake and `lilucpu=9` for KabyLake processor from clover boot lag
 
 
 ## Detailed Installed Guide
@@ -14,7 +19,7 @@ Go to [INSTALLATION_GUIDE_BEGINNERS.md](INSTALLATION_GUIDE_BEGINNERS.md)(**For b
 
 Go to [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)(**For advanced user only**) for detailed guide.
 
-Go to [INSTALLATION_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported WiFi adapters and buying guide**) for detailed guide.
+Go to [WIRELESS_CARD_BUYING_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported WiFi adapters and buying guide**) for detailed guide.
 
 ## About this Laptop
 
@@ -56,20 +61,18 @@ Universal for 9.5mm CD/DVD Drive Slot (for SSD and HDD)		| - | Working
 
 Kext | Link | Status
 ---------|:---------:|----------
-ACPIBatteryManager.kext 		| - | Working
-ACPISensors.kext		| - | Working
-AppleALC.kext		| - | Working
-AppleBacklightFixup.kext		| - | Working
-AtherosE2200Ethernet.kext		| - | Working
-RealtekRTL8111.kext		| - | Working
-CPUSensors.kext		| - | Working
-FakeSMC.kext		| - | Working
-GPUSensors.kext		| - | Working
-IntelMausiEthernet.kext		| - | Working
-Lilu.kext		| - | Working
-WhateverGreen.kext		| - | Working
-LPCSensors.kext		| - | Working
-USBInjectAll.kext		| - | Working
-VoodooI2C.kext		| - | Working
-VoodooI2CHID.kext		| - | Working
-VoodooPS2Controller.kext		| - | Working
+ACPIBatteryManager.kext | - | Working
+AppleALC.kext | - | Working
+FakeSMC_ACPISensors.kext | - | Working
+FakeSMC_CPUSensors.kext | - | Working
+FakeSMC_GPUSensors.kext | - | Working
+FakeSMC_LPCSensors.kext | - | Working
+FakeSMC_SMMSensors.kext  | - | Working
+FakeSMC.kext | - | Working
+Lilu.kext | - | Working
+RealtekRTL8111.kext | - | Working
+USBInjectAll.kext | - | Working
+VoodooI2C.kext | - | Working
+VoodooI2CELAN.kext | - | Working
+VoodooPS2Controller.kext | - | Working
+WhateverGreen.kext | - | Working
