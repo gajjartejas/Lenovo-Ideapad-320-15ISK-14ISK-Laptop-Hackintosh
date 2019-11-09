@@ -3,12 +3,12 @@ Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
 macOS Mojave 10.15.5            |  macOS Catalina 10.15.0
 :-------------------------:|:-------------------------:
-![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15/screenshot.png)
+![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.1/screenshot.png)
 
 
 
 ## macOS Mojave to Catalina direct upgrade note:
- 1. Download latest [Clover](10.15.x/10.15/CLOVER.zip) and overwrite with existing one
+ 1. Download latest [Clover](10.15.x/10.15.1/CLOVER.zip) and overwrite with existing one
  2. Update all kexts to latest version
  3. Use `lilucpu=8` for Skylake and `lilucpu=9` for KabyLake processor from clover boot lag
 
