@@ -1,16 +1,15 @@
 # Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
-macOS Mojave 10.15.5            |  macOS Catalina 10.15.1
+macOS Mojave 10.15.5            |  macOS Catalina 10.15.2
 :-------------------------:|:-------------------------:
-![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.1/screenshot.png)
+![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.2/screenshot.png)
 
 
 
 ## macOS Mojave to Catalina direct upgrade note:
  1. Download latest [Clover](10.15.x/10.15.1/CLOVER.zip) and overwrite with existing one
  2. Update all kexts to latest version
- 3. Use `lilucpu=8` for Skylake and `lilucpu=9` for KabyLake processor from clover boot lag
 
 
 ## Detailed Installed Guide
@@ -56,7 +55,7 @@ D-Link DWA-131 Wireless N Nano USB Adapter (Black) 		| - | Working
 BCM94360CS2 Wireless WIFI Bluetooth 4.0 Airport Card For Macbook Air 11" A1465 13" A1466 2013 MD711LL/A MD760 BCM94360CS2AX 		| - | Working
 Wireless Bluetooth Mouse Rechargeable Mouse		| - | Working
 Universal for 9.5mm CD/DVD Drive Slot (for SSD and HDD)		| - | Working
-
+15.6 inch IPS LCD matrix LP156WF4 LP156WF6 | - | Working
 ## Kext Used
 
 Kext | Link | Status
