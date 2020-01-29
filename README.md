@@ -1,9 +1,9 @@
 # Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
-macOS Mojave 10.15.5            |  macOS Catalina 10.15.2
+macOS Mojave 10.15.6            |  macOS Catalina 10.15.2
 :-------------------------:|:-------------------------:
-![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.2/screenshot.png)
+![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.3/screenshot.png)
 
 
 
