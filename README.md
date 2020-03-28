@@ -1,3 +1,8 @@
+ 
+ [<img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg" width="50" height="50" />](http://www.instagram.com/gajjartejas)
+ [<img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg" width="50" height="50" />](http://www.twitter.com/gajjartejas)
+ [<img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/reddit.svg" width="50" height="50" />](http://www.reddit.com/u/gajjartejas)
+
 # Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
@@ -6,10 +11,11 @@ macOS Mojave 10.15.6            |  macOS Catalina 10.15.3
 ![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.3/screenshot.png)
 
 
-
+## The latest update 10.15.4 is available. I don't want to mess up my laptop because I'm wokring from HOME. 
 ## macOS Mojave to Catalina direct upgrade note:
  1. Download latest [Clover](10.15.x/10.15.1/CLOVER.zip) and overwrite with existing one
  2. Update all kexts to latest version
+
 
 
 ## Detailed Installed Guide
