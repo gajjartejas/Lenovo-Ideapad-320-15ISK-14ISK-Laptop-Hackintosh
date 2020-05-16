@@ -6,29 +6,24 @@
 # Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
-macOS Mojave 10.14.6            |  macOS Catalina 10.15.3
+macOS Mojave 10.14.6            |  macOS Catalina 10.15.4
 :-------------------------:|:-------------------------:
-![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.3/screenshot.png)
+![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.4/screenshot.png)
 
-
-## The latest update 10.15.4 is available. I don't want to mess up my laptop because I'm working from HOME.
 ## macOS Mojave to Catalina direct upgrade note:
- 1. Download latest [Clover](10.15.x/10.15.1/CLOVER.zip) and overwrite with existing one
- 2. Update all kexts to latest version
+ Download latest [Clover](10.15.x/10.15.4/CLOVER.zip) and overwrite with existing one and update all kexts to latest version
 
-
-
-## Detailed Installed Guide
+## Detailed Installation Guide
 
 Go to [INSTALLATION_GUIDE_BEGINNERS.md](INSTALLATION_GUIDE_BEGINNERS.md)(**For beginners**)
 
-Go to [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)(**For advanced user only**) for detailed guide.
+Go to [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)(**Detailed guide - Advanced user only**)
 
-Go to [WIRELESS_CARD_BUYING_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported WiFi adapters and buying guide**) for detailed guide.
+Go to [WIRELESS_CARD_BUYING_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported WiFi adapters and buying guide**)
 
 ## About this Laptop
 
-## Hardware Status
+## Hardware Info 💻
 
 Type | Spec | Status | Link
 ---------|:---------:|----------:|----------
@@ -45,15 +40,8 @@ Touchpad		| I2C ELAN0608 | Working | [Guide](Touchpad-Guide.md)
 Keyboard		| - | Working | -
 Webcam		| Ven id: 0x04f2(Chicony Electronics Co.,Ltd.) Product id: 0xb5d8| Working | -
 Battery		|   Serial Number: L16M2PB2- 1229 Manufacturer: SMP Device Name:	L16M2PB2 | Working | -
-## Software Status
 
-Type | Spec | Status
----------|:---------:|----------
-Battery Status		| - | Working
-Brightness		| - | Working
-Sleep/Hibernate		| - | Unknown
-
-## Modifications
+## Modifications 🔨
 
 Type | Spec | Status
 ---------|:---------:|----------
@@ -62,22 +50,28 @@ BCM94360CS2 Wireless WIFI Bluetooth 4.0 Airport Card For Macbook Air 11" A1465 1
 Wireless Bluetooth Mouse Rechargeable Mouse		| - | Working
 Universal for 9.5mm CD/DVD Drive Slot (for SSD and HDD)		| - | Working
 15.6 inch IPS LCD matrix LP156WF4 LP156WF6 | - | Working
+## Software Status 👨‍💻
+
+Type | Spec | Status
+---------|:---------:|----------
+Battery Status		| - | Working
+Brightness With keys(F11 - F12)		| - | Working
+Sleep/Hibernate		| - | Unknown
+
 ## Kext Used
 
-Kext | Link | Status
----------|:---------:|----------
-ACPIBatteryManager.kext | - | Working
-AppleALC.kext | - | Working
-FakeSMC_ACPISensors.kext | - | Working
-FakeSMC_CPUSensors.kext | - | Working
-FakeSMC_GPUSensors.kext | - | Working
-FakeSMC_LPCSensors.kext | - | Working
-FakeSMC_SMMSensors.kext  | - | Working
-FakeSMC.kext | - | Working
-Lilu.kext | - | Working
-RealtekRTL8111.kext | - | Working
-USBInjectAll.kext | - | Working
-VoodooI2C.kext | - | Working
-VoodooI2CELAN.kext | - | Working
-VoodooPS2Controller.kext | - | Working
-WhateverGreen.kext | - | Working
+Kext | Info 
+---------|:---------
+AppleALC.kext | For Audio
+Lilu.kext | Arbitrary kext and process patching on macOS
+RealtekRTL8111.kext | RTL8111/8168/8411 PCI Express Gigabit Ethernet
+SMCBatteryManager.kext | Battery Status Monitoring
+VirtualSMC.kext | SMC Emulator Layer
+SMCProcessor.kext | Processor Temp Monitoring
+SMCSuperIO.kext | Fan Reading
+USBPorts.kext | For USB Prot
+VoodooI2C.kext | For I2C Touchpad
+VoodooI2CELAN.kext | For ELAN Touchpad
+VoodooPS2Controller.kext | Contains updated Voodoo PS/2 Controller, improved Keyboard & Synaptics TouchPad
+WhateverGreen.kext | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs
+
