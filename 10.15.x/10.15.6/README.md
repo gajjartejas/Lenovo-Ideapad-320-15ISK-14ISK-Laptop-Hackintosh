@@ -1,6 +1,6 @@
 
 # Changelog
-  - Updated OS (10.15.4 TO 10.15.9)
+  - Updated OS (10.15.4 to 10.15.9)
   - Added OpenCore 0.5.9
 
 # OpenCore Changelog
