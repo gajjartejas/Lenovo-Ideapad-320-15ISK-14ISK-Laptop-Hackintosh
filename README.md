@@ -75,3 +75,16 @@ VoodooI2CELAN.kext | For ELAN Touchpad
 VoodooPS2Controller.kext | Contains updated Voodoo PS/2 Controller, improved Keyboard & Synaptics TouchPad
 WhateverGreen.kext | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs
 
+## Credits
+ - [Apple](https://www.apple.com) for macOS.
+ - [Acidanthera](https://github.com/acidanthera) for most of the kexts.
+ - [goodwin](https://github.com/goodwin) for ALCPlugFix.
+ - [RehabMan](https://github.com/RehabMan) for some patches.
+ - [Steve Zheng](https://github.com/stevezhengshiqi) for some patches.
+ - [Sniki](https://github.com/Sniki) for some patches.
+ - [daliansky](https://github.com/daliansky) for some patches.
+ - [Moh_Ameen](https://github.com/ameenjuz) for some patches.
+ - [al3xtjames](https://github.com/al3xtjames) for clover-theme-oss theme.
+ - [ImmersiveX](https://github.com/ImmersiveX) for clover-theme-minimal-dark theme.
+ - And anyone else that helped to develop and improve hackintoshing.
+
