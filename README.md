@@ -13,11 +13,18 @@ macOS Mojave 10.14.6            |  macOS Catalina 10.15.6
 ## macOS Mojave to Catalina direct upgrade note:
  Download latest [Clover](10.15.x/10.15.4/CLOVER.zip) and overwrite with existing one and update all kexts to latest version
 
-## Detailed Installation Guide
+## OpenCore Installation Guide
+
+Go to [INSTALLATION_GUIDE_OPENCORE.md](INSTALLATION_GUIDE_OPENCORE.md)(**Detailed guide**)
+
+
+## Clover Installation Guide
 
 Go to [INSTALLATION_GUIDE_BEGINNERS.md](INSTALLATION_GUIDE_BEGINNERS.md)(**For beginners**)
 
 Go to [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)(**Detailed guide - Advanced user only**)
+
+## Other Guide
 
 Go to [WIRELESS_CARD_BUYING_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported WiFi adapters and buying guide**)
 
