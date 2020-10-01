@@ -1,6 +1,6 @@
-# Installation guide (For Beginners)
+# Beginner installation guide 
 
-## Pre Installation Guide
+## Pre Installation
 
 ### Requirements
  - An active internet connection and Apple Mac
