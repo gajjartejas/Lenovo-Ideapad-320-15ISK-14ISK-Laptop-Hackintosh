@@ -1,6 +1,6 @@
-# Installation guide (Advanced user only)
+# Instillation
 
-## Pre Installation Guide
+## Part 1
 
 ### Requirements
  - An active internet connection and Apple Mac
