@@ -1,8 +1,6 @@
 # Instillation
 
-## Part 1
-
-### Requirements
+# Requirements
  - An active internet connection and Apple Mac
  - USB Stick minimum 8GB
  - Mac OS High Sierra or Mac OS Mojave should be already downloaded
@@ -13,6 +11,8 @@
  - [UniBeast - Mojave](https://www.tonymacx86.com/resources/unibeast-9-2-0-mojave.426/)
  
  First, use UniBeast-Mojave to create bootable USB drive. It will take some time after finished make a sure EFI Folder is mounted. Now download [config_HD515_520_530_540.plist](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD515_520_530_540.plist) from https://github.com/RehabMan/OS-X-Clover-Laptop-Config and save it and open it with Clover Configurator. 
+ 
+ # Issues
  
  ### Fix Audio
    ![alt text](assets/Screenshots/sound_setting_panel.png)
