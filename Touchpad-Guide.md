@@ -84,9 +84,18 @@ For DSDT.dsl, wait for the file to load completely
 
 First apply Windows 10 Patch
 
-Second you have to find below Scope:
-Diff Preview: http://www.mergely.com/eOIVp4k6/?vp=1
- ```
+Second you have to find below Scope and replace with `After Patch`
+
+<table>
+<tr>
+<th>Before Patch</th>
+<th>After Patch</th>
+</tr>
+<tr>
+        <td style="width: 259px; vertical-align:top">
+
+
+ ```aml
  Scope (_SB.PCI0.I2C0)
     {
         Device (TPD0)
@@ -343,8 +352,12 @@ Diff Preview: http://www.mergely.com/eOIVp4k6/?vp=1
     }
 ```
 
-and replace with this:
-```
+</td>
+        <td style="width: 259px; vertical-align:top">
+
+
+
+```aml
 Scope (_SB.PCI0.I2C0)
     {
         Device (TPD0)
@@ -601,6 +614,10 @@ Scope (_SB.PCI0.I2C0)
         }
     }
 ```
+</td>
+</tr>
+</table>
+
     
 Compile and if no errors, save the file as AML file (replace if needed).
 Copy ONLY EDITED (don't copy if you didn't replace anything) files from DSDT folder to EFI/CLOVER/ACPI/patched
