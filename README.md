@@ -2,6 +2,8 @@
  [<img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg" width="50" height="50" />](http://www.instagram.com/gajjartejas)
  [<img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg" width="50" height="50" />](http://www.twitter.com/gajjartejas)
  [<img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/reddit.svg" width="50" height="50" />](http://www.reddit.com/u/gajjartejas)
+ [<img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/telegram.svg" width="50" height="50" />](https://t.me/indianhackintosh)
+
 
 # Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
@@ -110,6 +112,10 @@ SSDT-XOSI.aml | This SSDT can be used instead of an OS Check Fix patch to simula
  - Micro SD Card Reader - Not working in OpenCore.
  - Suggest to me via issue.
 
+### Telegram Channel
+ - [India Hackintosh Community Group](https://t.me/indianhackintosh)
+ - [India Hackintosh Channel](https://t.me/hackintoshcommunity)
+  
 ### Credits
  - [Apple](https://www.apple.com) for macOS.
  - [Acidanthera](https://github.com/acidanthera) for most of the kexts.
