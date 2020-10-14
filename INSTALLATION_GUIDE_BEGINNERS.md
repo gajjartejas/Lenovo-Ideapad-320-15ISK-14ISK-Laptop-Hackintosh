@@ -1,4 +1,4 @@
-# Beginner installation guide 
+# Beginner installation guide (Deprecated)
 
 ## Pre Installation
 

@@ -20,7 +20,7 @@ macOS Mojave 10.14.6            |  macOS Catalina 10.15.6 |  macOS Big Sur 11.0 
 Go to [INSTALLATION_GUIDE_OPENCORE.md](INSTALLATION_GUIDE_OPENCORE.md)(**Detailed guide**)
 
 
-## Clover Installation Guide
+## Clover Installation Guide (Deprecated)
 
 Go to [INSTALLATION_GUIDE_BEGINNERS.md](INSTALLATION_GUIDE_BEGINNERS.md)(**For beginners**)
 
@@ -85,33 +85,30 @@ Kext | Info
 [VoodooPS2Controller.kext](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller) | Contains updated Voodoo PS/2 Controller, improved Keyboard & Synaptics TouchPad.
 [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs. This is needed for Intel HD 520.
 [VoodooTSCSync.kext](https://github.com/RehabMan/VoodooTSCSync) | A kernel extension which will synchronize the TSC on any Intel CPUs. Without this system hangs/freeze after awake from sleep.
-[HWPEnabler.kext](https://github.com/goodwin/HWPEnable) | HWP is a technology introduced in Skylake which lets the CPU select its own stepping speed without the usage of the CPU Multiplier.﻿ Additionally it trottles/boosts itself much faster, which improoves overall CPU performance. With enabled HWP you dont need to create SSDTs with CPU P-States anymore.
+[HWPEnabler.kext](https://github.com/goodwin/HWPEnable) | HWP is a technology introduced in Skylake which lets the CPU select its own stepping speed without the usage of the CPU Multiplier. Additionally it trottles/boosts itself much faster, which improoves overall CPU performance. With enabled HWP you dont need to create SSDTs with CPU P-States anymore.
 
 ### SSDT Used 
 
 Kext | Info | Refrence Link 
 :---------|:--------- |:---------
-SSDT-ARTC.aml | Turned off for now. Fix the system clocks found on newer hardware. Apple uses ARTC instead of RTC0. | -
 SSDT-EC-USBX.aml | Fix Embedded Controllers. For Skylake laptops and newer. | [Link](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-fix.html#fixing-embedded-controller-ssdt-ecusbx)
-SSDT-EC.aml | Not needed for Skylake. Fix Embedded Controllers. For Broadwell laptops and older. | -
 SSDT-EHCx_OFF.aml | USB compatibility table for disable phantoms EHC1, EHC2. Only for 7,8,9-series chipsets and 10.11 and newer! | [Link](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/SSDT-EHCx_OFF.dsl)
 SSDT-GPRW.aml | _PRW USB wake up patch. | [Link](https://1revenger1.gitbook.io/laptop-guide/battery-power-management/correcting-sleep-problems)
 SSDT-I2C.aml | Fix trackpad | [Link](https://voodooi2c.github.io/#GPIO%20Pinning/GPIO%20Pinning)
 SSDT-KBD.aml | Fix brightness key.(F11 and F12)  | [Link]((https://github.com/RehabMan/HP-Envy-DSDT-Patch/blob/master/SSDT-Q10Q11.dsl))
-SSDT-LPC.aml | Not needed | -
 SSDT-MEM2.aml | Add missing MEM2 Device to enhace performance like a real Mac | -
 SSDT-PMCR.aml | Add missing PMCR Device to enhace performance like a real Mac | -
 SSDT-PNLF.aml | Fix Backlight. For most users. | [Link](https://dortania.github.io/Getting-Started-With-ACPI/Laptops/backlight.html)
-SSDT-SATA.aml | Not needed. Remove SSDT-SATA.aml and rename SAT0 to SATA Patch from config | -
 SSDT-SBUS-MCHC.aml | Mainly handles the System Management Bus. | [Link](https://dortania.github.io/Getting-Started-With-ACPI/Universal/smbus.html)
-SSDT-SMBUS.aml | N/A | -
 SSDT-UIAC.aml | Block empty USB ports. Created using HackinTool. USBPorts.kext is also required. | [Link](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553/)
 SSDT-XOSI.aml | This SSDT can be used instead of an OS Check Fix patch to simulate a version of Windows for Darwin. | [Link](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-prebuilt.html#trackpad)
 
 ### TODO
  - Micro SD Card Reader - Not working in OpenCore.
+ - USB mapping tutorial.
+ - Seperate guide for audio, graphics etc.
  - Suggest to me via issue.
-
+  
 ### Telegram Channel
  - [India Hackintosh Community Group](https://t.me/indianhackintosh)
  - [India Hackintosh Channel](https://t.me/hackintoshcommunity)
