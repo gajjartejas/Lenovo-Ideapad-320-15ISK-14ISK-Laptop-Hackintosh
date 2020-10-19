@@ -86,6 +86,7 @@ Note: **External picker must be selected in order to show picker UI.**
 ![alt text](assets/Screenshots/oc/oc_misc_debug.png) 
 
 ### Security
+Note: **Make a sure that `SecureBootModel` is `Disabled`. Otherwise You will get KP in MacOS Big Sure 11.0 beta 10.**
 ![alt text](assets/Screenshots/oc/oc_misc_security.png) 
 
 
@@ -122,12 +123,17 @@ Note: System ProfuctName Should be ```MacBookPro13,3``` Also please generate you
 
 ## UEFI
 
-### APFS, Audio, Inout,Output, ProtocolOverrides amd ReservedMemory 
+### APFS, Audio, Inout,Output, ProtocolOverrides and ReservedMemory 
 
 Ignore
 
 ### Drivers
+Note: `PointerSupportMode` should be empty.
 ![alt text](assets/Screenshots/oc/oc_uefi_drivers.png) 
+
+### Input
+Note: `PointerSupportMode` should be empty.
+![alt text](assets/Screenshots/oc/oc_uefi_input.png) 
 
 ### Quirks
 Make a sure ```ReleaseUsbOwnership``` is checked otherwise  kp on boot occurs.
