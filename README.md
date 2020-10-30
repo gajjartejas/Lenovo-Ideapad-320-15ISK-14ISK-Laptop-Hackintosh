@@ -95,7 +95,7 @@ SSDT-EC-USBX.aml | Fix Embedded Controllers. For Skylake laptops and newer. | [L
 SSDT-EHCx_OFF.aml | USB compatibility table for disable phantoms EHC1, EHC2. Only for 7,8,9-series chipsets and 10.11 and newer! | [Link](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/SSDT-EHCx_OFF.dsl)
 SSDT-GPRW.aml | _PRW USB wake up patch. | [Link](https://1revenger1.gitbook.io/laptop-guide/battery-power-management/correcting-sleep-problems)
 SSDT-I2C.aml | Fix trackpad | [Link](https://voodooi2c.github.io/#GPIO%20Pinning/GPIO%20Pinning)
-SSDT-KBD.aml | Fix brightness key.(F11 and F12)  | [Link]((https://github.com/RehabMan/HP-Envy-DSDT-Patch/blob/master/SSDT-Q10Q11.dsl))
+SSDT-KBD.aml | Fix brightness key.(F11 and F12)  | [Link](https://github.com/RehabMan/HP-Envy-DSDT-Patch/blob/master/SSDT-Q10Q11.dsl)
 SSDT-MEM2.aml | Add missing MEM2 Device to enhace performance like a real Mac | -
 SSDT-PMCR.aml | Add missing PMCR Device to enhace performance like a real Mac | -
 SSDT-PNLF.aml | Fix Backlight. For most users. | [Link](https://dortania.github.io/Getting-Started-With-ACPI/Laptops/backlight.html)
