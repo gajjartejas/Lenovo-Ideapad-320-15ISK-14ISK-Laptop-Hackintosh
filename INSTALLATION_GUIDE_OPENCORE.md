@@ -1,4 +1,4 @@
-# OpenCore 0.6.0 Installation guide
+# OpenCore 0.6.3 Installation guide
 
 ## TODO
  - Add refrence for patches
