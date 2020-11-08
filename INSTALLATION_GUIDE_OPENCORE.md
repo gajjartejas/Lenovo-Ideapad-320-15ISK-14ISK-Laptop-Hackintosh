@@ -10,15 +10,14 @@
  - USB Stick minimum 8GB
  
 ## Tools required
- - OpenCore Configurator
- - Plist editor
+ - `OpenCore Configurator` or `Plist editor`
 
  ## Guide
  Follow Dortania's guide to create bootable USB. You can use macOS, Linux or Windows.
 
  https://dortania.github.io/OpenCore-Install-Guide/installer-guide/
 
- After USB has been created, download OpenCore 0.6.0 release build from Dortania's github repo.
+ After USB has been created, download latest OpenCore release build from Dortania's github repo.
 
  https://github.com/acidanthera/OpenCorePkg
 
@@ -79,13 +78,15 @@ Ignore or You can enable/add according to your need ex: `Enable Trim For SSD`
 ## Misc
 
 ### Boot
-![alt text](assets/Screenshots/oc/oc_misc_debug.png) 
-
-### Debug
 Note: **External picker must be selected in order to show picker UI.**
 ![alt text](assets/Screenshots/oc/oc_misc_boot.png) 
 
+### Debug
+
+![alt text](assets/Screenshots/oc/oc_misc_debug.png) 
+
 ### Security
+Note: **Make a sure that `SecureBootModel` is `Disabled`. Otherwise You will get KP in MacOS Big Sure 11.0 beta 10.**
 ![alt text](assets/Screenshots/oc/oc_misc_security.png) 
 
 
@@ -99,6 +100,9 @@ Ignore
 Ignore
 
 ### Add -> ```7C436110-AB2A-4BBB-A880-FE41995C9F82```
+
+Note: The ```boot-args``` is ```dart=0 darkwake=1 shikigva=40 -igfxnohdmi -disablegfxfirmware -wegnoegpu```
+
 ![alt text](assets/Screenshots/oc/oc_nvram_add.png) 
 
 ### Delete 
@@ -111,7 +115,7 @@ Ignore
 
 
 ## Platform Info
-Note: System ProfuctName Should be ```MacBookPro13,3```
+Note: System ProfuctName Should be ```MacBookPro13,3``` Also please generate your own serial no.
 ![alt text](assets/Screenshots/oc/oc_platforminfo.png) 
 
 
@@ -119,12 +123,17 @@ Note: System ProfuctName Should be ```MacBookPro13,3```
 
 ## UEFI
 
-### APFS, Audio, Inout,Output, ProtocolOverrides amd ReservedMemory 
+### APFS, Audio, Inout,Output, ProtocolOverrides and ReservedMemory 
 
 Ignore
 
 ### Drivers
+Note: `PointerSupportMode` should be empty.
 ![alt text](assets/Screenshots/oc/oc_uefi_drivers.png) 
+
+### Input
+Note: `PointerSupportMode` should be empty.
+![alt text](assets/Screenshots/oc/oc_uefi_input.png) 
 
 ### Quirks
 Make a sure ```ReleaseUsbOwnership``` is checked otherwise  kp on boot occurs.

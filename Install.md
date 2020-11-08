@@ -1,4 +1,4 @@
-# Instillation
+# Instillation (Deprecated)
 
 # Requirements
  - An active internet connection and Apple Mac
