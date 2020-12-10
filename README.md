@@ -10,7 +10,7 @@ Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
 macOS Mojave 10.14.6            |  macOS Catalina 10.15.6 |  macOS Big Sur 11.0 developer beta 8	
 :-------------------------:|:-------------------------:|:-------------------------:
-![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.6/screenshot.png)  |  ![alt text](11.0.x/10.15.dev.beta8/screenshot.png)
+![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.6/screenshot.png)  |  ![alt text](11.0.x/11.0.1/screenshot.png)
 
 ## macOS Catalina to Big Sur direct upgrade note:
  Download latest OpenCore zip folder from release and overwrite with existing one.
@@ -96,8 +96,8 @@ SSDT-EHCx_OFF.aml | USB compatibility table for disable phantoms EHC1, EHC2. Onl
 SSDT-GPRW.aml | _PRW USB wake up patch. | [Link](https://1revenger1.gitbook.io/laptop-guide/battery-power-management/correcting-sleep-problems)
 SSDT-I2C.aml | Fix trackpad | [Link](https://voodooi2c.github.io/#GPIO%20Pinning/GPIO%20Pinning)
 SSDT-KBD.aml | Fix brightness key.(F11 and F12)  | [Link](https://github.com/RehabMan/HP-Envy-DSDT-Patch/blob/master/SSDT-Q10Q11.dsl)
-SSDT-MEM2.aml | Add missing MEM2 Device to enhace performance like a real Mac | -
-SSDT-PMCR.aml | Add missing PMCR Device to enhace performance like a real Mac | -
+SSDT-MEM2.aml | Add missing MEM2 Device to enhance performance like a real Mac | -
+SSDT-PMCR.aml | Add missing PMCR Device to enhance performance like a real Mac | -
 SSDT-PNLF.aml | Fix Backlight. For most users. | [Link](https://dortania.github.io/Getting-Started-With-ACPI/Laptops/backlight.html)
 SSDT-SBUS-MCHC.aml | Mainly handles the System Management Bus. | [Link](https://dortania.github.io/Getting-Started-With-ACPI/Universal/smbus.html)
 SSDT-UIAC.aml | Block empty USB ports. Created using HackinTool. USBPorts.kext is also required. | [Link](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553/)
@@ -106,7 +106,7 @@ SSDT-XOSI.aml | This SSDT can be used instead of an OS Check Fix patch to simula
 ### TODO
  - Micro SD Card Reader - Not working in OpenCore.
  - USB mapping tutorial.
- - Seperate guide for audio, graphics etc.
+ - Separate guide for audio, graphics etc.
  - Suggest to me via issue.
   
 ### Telegram Channel

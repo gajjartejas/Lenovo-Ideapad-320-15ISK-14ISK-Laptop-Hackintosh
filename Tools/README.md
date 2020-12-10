@@ -17,7 +17,7 @@ Go to `extract_efi_without_serial.sh` directory.
 `Second Argument($2)` = `Device name + OC Folder path` = `/Volumes/ESP/EFI/OC`
 
 ```
-./mount_efi.sh /dev/disk0s1  /Volumes/ESP/EFI/OC
+./extract_efi_without_serial.sh /dev/disk0s1  /Volumes/ESP/EFI/OC
 ```
 
 This will output the zip of the OpenCore folder.
