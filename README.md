@@ -9,11 +9,21 @@
 
 
 # Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh
+
+[![Github release](https://img.shields.io/github/release/gajjartejas/Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh.svg?color=blue)](https://github.com/hieplpvip/AppleBacklightSmoother/releases/latest)
+[![Github downloads](https://img.shields.io/github/downloads/gajjartejas/Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh/total.svg?color=blue)](https://github.com/hieplpvip/AppleBacklightSmoother/releases)
+[![Donate with PayPal](https://img.shields.io/badge/paypal-donate-red.svg)](https://paypal.me/gajjartejas)
+<!---
+[![Build Status](https://travis-ci.com/gajjartejas/Lenovo-Ideapad-320-15ISK-14ISK-Laptop-Hackintosh.svg?branch=master)](https://travis-ci.com/hieplpvip/AppleBacklightSmoother)
+[![Scan Status](https://scan.coverity.com/projects/21839/badge.svg)](https://scan.coverity.com/projects/21839)
+-->
+
+
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
-macOS Mojave 10.14.6            |  macOS Catalina 10.15.6 |  macOS Big Sur 11.0.1	
+macOS Mojave 10.14.6            |  macOS Catalina 10.15.6 |  macOS Big Sur 11.1	
 :-------------------------:|:-------------------------:|:-------------------------:
-![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.6/screenshot.png)  |  ![alt text](11.0.x/11.0.1/screenshot.png)
+![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.6/screenshot.png)  |  ![alt text](11.0.x/11.1/screenshot.png)
 
 ## macOS Catalina to Big Sur direct upgrade note:
  Download latest OpenCore zip folder from release and overwrite with existing one.
@@ -89,7 +99,7 @@ Kext | Info
 [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs. This is needed for Intel HD 520.
 [VoodooTSCSync.kext](https://github.com/RehabMan/VoodooTSCSync) | A kernel extension which will synchronize the TSC on any Intel CPUs. Without this system hangs/freeze after awake from sleep.
 [HWPEnabler.kext](https://github.com/goodwin/HWPEnable) | HWP is a technology introduced in Skylake which lets the CPU select its own stepping speed without the usage of the CPU Multiplier. Additionally it trottles/boosts itself much faster, which improoves overall CPU performance. With enabled HWP you dont need to create SSDTs with CPU P-States anymore.
-
+[AppleBacklightSmoother.kext](https://github.com/hieplpvip/AppleBacklightSmoother) | A Lilu plugin that patches Apple Intel graphics drivers to get smooth backlight transition.
 ### SSDT Used 
 
 Kext | Info | Refrence Link 
