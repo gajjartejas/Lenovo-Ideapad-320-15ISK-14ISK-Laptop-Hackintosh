@@ -10,7 +10,7 @@ EFIOutputFolder=$(dirname $0)
 cd $EFIOutputFolder
 
 sudo diskutil mount $1
-cp -R /Volumes/ESP/EFI/OC $EFIOutputFolder
+cp -R /Volumes/EFI/EFI/OC $EFIOutputFolder
 cd $EFIOutputFolder
 plutil -replace PlatformInfo.DataHub.SystemSerialNumber -string "PLEASE INSERT YOUR OWN" OC/config.plist
 plutil -replace PlatformInfo.DataHub.SystemUUID -string "PLEASE INSERT YOUR OWN" OC/config.plist
