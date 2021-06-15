@@ -1,16 +1,23 @@
 # Supproted cards
-1. DW1560 - M.2 (A/E) (BCM94352Z- 867Mbps - BT4.0, pricier, I don't see why would you go with this card if the above is cheaper)
 
-2. DW1830 - M.2 (A/E) (BCM94360 - 1300Mbps - BT4.0, priciest, needs 3 antennas to work to its full potential, works with just 2 tho, LARGE footprint, and I don't think it would fit there)
+1. Intel® Dual Band Wireless-AC 3165 -  Now supported by OpenIntelWireless thanks to OpenIntelWireless team. For more info please visit https://openintelwireless.github.io/itlwm/ 
 
-3. DW1820A - M.2 (A/E) (BCM94350ZAE - 867Mbps - BT4.0 - 802.11a / b / g / n / ac) Please read before you buy: [link](https://osxlatitude.com/forums/topic/11322-broadcom-bcm4350-cards-under-high-sierramojavecatalina/)
+2. DW1560 - M.2 (A/E) (BCM94352Z- 867Mbps - BT4.0, pricier, I don't see why would you go with this card if the above is cheaper)
 
-4. BCM943224PCIEBT2 (You need to buy adaptor) (300Mbps - BT4.0) Please read issue: [#3](/../../issues/26)
+3. DW1830 - M.2 (A/E) (BCM94360 - 1300Mbps - BT4.0, priciest, needs 3 antennas to work to its full potential, works with just 2 tho, LARGE footprint, and I don't think it would fit there)
 
-5. BCM94360CS2 (You need to buy adaptor) (2.4G 300M/5G 867M - BT4.0) - Nativally works.
+4. DW1820A - M.2 (A/E) (BCM94350ZAE - 867Mbps - BT4.0 - 802.11a / b / g / n / ac) Please read before you buy: [link](https://osxlatitude.com/forums/topic/11322-broadcom-bcm4350-cards-under-high-sierramojavecatalina/)
 
+5. BCM943224PCIEBT2 (You need to buy adaptor) (300Mbps - BT4.0) Please read issue: [#3](/../../issues/26)
 
-# BCM94360CS2 (Currently I am Using)
+6. BCM94360CS2 (You need to buy adaptor) (2.4G 300M/5G 867M - BT4.0) - Nativally works.
+
+# Intel® Dual Band Wireless-AC 3165 (Currently I am using it)
+ Some limitations
+ - It does not support WiFi hotspot.
+ - Some time it does have connection issue while connecting.
+ 
+# BCM94360CS2 (Used about an year without any problem in macOS BigSur)
 
 ## CARD: 
 New BCM94360CS2 Wireless WIFI Bluetooth 4.0 Airport Card For Macbook Air 11" A1465 13" A1466 2013 MD711LL/A MD760 BCM94360CS2AX

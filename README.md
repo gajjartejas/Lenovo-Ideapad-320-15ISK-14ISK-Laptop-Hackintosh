@@ -21,9 +21,9 @@
 
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
-macOS Mojave 10.14.6            |  macOS Catalina 10.15.6 |  macOS Big Sur 11.3.1	
+macOS Mojave 10.14.6            |  macOS Catalina 10.15.6 |  macOS Big Sur 11.4	
 :-------------------------:|:-------------------------:|:-------------------------:
-![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.6/screenshot.png)  |  ![alt text](11.0.x/11.3.1/screenshot.png)
+![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.6/screenshot.png)  |  ![alt text](11.0.x/11.4/screenshot.png)
 
 ## macOS Catalina to Big Sur direct upgrade note:
  Download latest OpenCore zip folder from release and overwrite with existing one.
@@ -86,6 +86,10 @@ Sleep | - |  Working
 Kext | Info 
 :---------|:---------
 [Lilu.kext](https://github.com/acidanthera/Lilu) | Arbitrary kext and process patching on macOS.
+[AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm) | Intel Wi-Fi Drivers for macOS.
+[itlwm.kext](https://github.com/OpenIntelWireless/itlwm) | Intel Wi-Fi Drivers for macOS.
+[IntelBluetoothFirmware.kext](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) | Intel Bluetooth Drivers for macOS.
+[IntelBluetoothInjector.kext](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) | Intel Bluetooth Drivers for macOS.
 [AppleALC.kext](https://github.com/acidanthera/AppleALC) | For Audio.
 [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X) | RTL8111/8168/8411 PCI Express Gigabit Ethernet.
 [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC) | SMC Emulator Layer.
@@ -135,10 +139,8 @@ SSDT-XOSI.aml | This SSDT can be used instead of an OS Check Fix patch to simula
  - [Sniki](https://github.com/Sniki) for some patches.
  - [daliansky](https://github.com/daliansky) for some patches.
  - [Moh_Ameen](https://github.com/ameenjuz) for some patches.
- - [al3xtjames](https://github.com/al3xtjames) for clover-theme-oss theme.
- - [ImmersiveX](https://github.com/ImmersiveX) for clover-theme-minimal-dark theme.
+ - [OpenIntelWireless](https://github.com/OpenIntelWireless) for Intel WiFi drivers.
  - And anyone else that helped to develop and improve hackintoshing.
- - me
 
 
 ## Contributors ✨
