@@ -1,6 +1,6 @@
 
 ### Changelog
- 1. macOS Big Sur 12.0.1 RC support added. (The installer boots but haven't tried to upgrade/install yet:)
+ 1. macOS macOS Monterey 12.0.1 RC support added. (The installer boots but haven't tried to upgrade/install yet:)
  2. OpenCore version updated to 0.7.4.
  3. Kexts updated.
 
