@@ -21,9 +21,9 @@
 
 Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
 
-macOS Mojave 10.14.6            |  macOS Catalina 10.15.6 |  macOS Big Sur 11.5.2	
-:-------------------------:|:-------------------------:|:-------------------------:
-![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.6/screenshot.png)  |  ![alt text](11.0.x/11.5.2/screenshot.png)
+macOS Mojave 10.14.6            |  macOS Catalina 10.15.6 |  macOS Big Sur 11.6	|  macOS Monterey 12.0.1 RC
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![alt text](10.14.x/10.14.6/Screenshot.png)  |  ![alt text](10.15.x/10.15.6/screenshot.png)  |  ![alt text](11.0.x/11.6/screenshot.png) |  Coming Soon...
 
 ## macOS Catalina to Big Sur direct upgrade note:
  Download latest OpenCore zip folder from release and overwrite with existing one.
