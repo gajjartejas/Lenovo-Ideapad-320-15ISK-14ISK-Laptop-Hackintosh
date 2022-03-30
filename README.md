@@ -89,7 +89,6 @@ Kext | Info
 [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm) | Intel Wi-Fi Drivers for macOS.
 [itlwm.kext](https://github.com/OpenIntelWireless/itlwm) | Intel Wi-Fi Drivers for macOS.
 [IntelBluetoothFirmware.kext](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) | Intel Bluetooth Drivers for macOS.
-[IntelBluetoothInjector.kext](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) | Intel Bluetooth Drivers for macOS.
 [AppleALC.kext](https://github.com/acidanthera/AppleALC) | For Audio.
 [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X) | RTL8111/8168/8411 PCI Express Gigabit Ethernet.
 [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC) | SMC Emulator Layer.
@@ -101,9 +100,16 @@ Kext | Info
 [VoodooI2CELAN.kext](https://github.com/VoodooI2C/VoodooI2C) | For ELAN Touchpad.
 [VoodooPS2Controller.kext](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller) | Contains updated Voodoo PS/2 Controller, improved Keyboard & Synaptics TouchPad.
 [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen) | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs. This is needed for Intel HD 520.
-[VoodooTSCSync.kext](https://github.com/RehabMan/VoodooTSCSync) | A kernel extension which will synchronize the TSC on any Intel CPUs. Without this system hangs/freeze after awake from sleep.
 [HWPEnabler.kext](https://github.com/goodwin/HWPEnable) | HWP is a technology introduced in Skylake which lets the CPU select its own stepping speed without the usage of the CPU Multiplier. Additionally it trottles/boosts itself much faster, which improoves overall CPU performance. With enabled HWP you dont need to create SSDTs with CPU P-States anymore.
-[AppleBacklightSmoother.kext](https://github.com/hieplpvip/AppleBacklightSmoother) | A Lilu plugin that patches Apple Intel graphics drivers to get smooth backlight transition.
+[CpuTscSync.kext](https://github.com/acidanthera/CpuTscSync) | It is a Lilu plugin, combining functionality of VoodooTSCSync and disabling xcpm_urgency if TSC is not in sync. It should solve kernel panics after wake.
+[HoRNDIS.kext](https://github.com/jwise/HoRNDIS) | Android USB tethering driver for Mac OS X
+[ BlueToolFixup.kext,](https://github.com/acidanthera/BrcmPatchRAM) | Required for macOS 12 or newer, as in macOS 12 Apple has changed parts of the Bluetooth stack from kernel-space to user-space
+[FeatureUnlock.kext](https://github.com/acidanthera/FeatureUnlock) | Add Sidecar support to unsupported models
+[BrightnessKeys.kext](https://github.com/acidanthera/BrightnessKeys) | Handler for brightness keys without DSDT patches
+[RTCMemoryFixup.kext](https://github.com/acidanthera/RTCMemoryFixup) | open source kernel extension providing a way to emulate some offsets in your CMOS (RTC) memory
+
+
+HibernationFixup.kext
 ### SSDT Used 
 
 Kext | Info | Refrence Link 
@@ -119,9 +125,9 @@ SSDT-PNLF.aml | Fix Backlight. For most users. | [Link](https://dortania.github.
 SSDT-SBUS-MCHC.aml | Mainly handles the System Management Bus. | [Link](https://dortania.github.io/Getting-Started-With-ACPI/Universal/smbus.html)
 SSDT-UIAC.aml | Block empty USB ports. Created using HackinTool. USBPorts.kext is also required. | [Link](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553/)
 SSDT-XOSI.aml | This SSDT can be used instead of an OS Check Fix patch to simulate a version of Windows for Darwin. | [Link](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-prebuilt.html#trackpad)
+SSDT-PrtSc-F13.aml | PrtSc Screenshot | -
 
 ### TODO
- - Micro SD Card Reader - Not working in OpenCore.
  - USB mapping tutorial.
  - Separate guide for audio, graphics etc.
  - Suggest to me via issue.
