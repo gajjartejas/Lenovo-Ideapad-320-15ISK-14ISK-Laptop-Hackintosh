@@ -52,21 +52,21 @@ Go to [WIRELESS_CARD_BUYING_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported
 
 ### Original Hardware Info 💻
 
-| Type         | Spec                                                                  | Status      | Link                                                                                                     |
-| :----------- | :-------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------- |
-| Computer     | Lenovo Ideapad 320-15ISK 80XH01DNIN                                   | Working     | -                                                                                                        |
-| BIOS Version | LENOVO Insyde EFI(4WCN29WW)                                           | Working     | -                                                                                                        |
-| CPU          | DualCore Intel Core i3, 2000 MHz (20 x 100)                           | Working     | -                                                                                                        |
-| Chipset      | Intel Sunrise Point-LP, Intel Skylake-U                               | Working     | -                                                                                                        |
-| Graphics     | Intel HD Graphics 520, NVIDIA GeForce 920MX (Using Intel GPU only)    | Working     | [Guide](https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/) |
-| Audio        | Realtek ALC3240, Codec ID:10EC0230h / 17AA3809h                       | Working     | [Guide](https://github.com/acidanthera/AppleALC/wiki/Installation-and-usage)                             |
-| Ethernet     | Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter()                 | Working     | -                                                                                                        |
-| WiFi         | Intel(R) Dual Band Wireless-AC 3165                                   | Not Working | -                                                                                                        |
-| Bluetooth    | Intel(R) Wireless Bluetooth(R)                                        | Working     | -                                                                                                        |
-| Touchpad     | I2C ELAN0608                                                          | Working     | [Guide](Touchpad-Guide.md)                                                                               |
-| Keyboard     | -                                                                     | Working     | -                                                                                                        |
-| Webcam       | Ven id: 0x04f2(Chicony Electronics Co.,Ltd.) Product id: 0xb5d8       | Working     | -                                                                                                        |
-| Battery      | Serial Number: L16M2PB2- 1229 Manufacturer: SMP Device Name: L16M2PB2 | Working     | -                                                                                                        |
+| Type         | Spec                                                                  | Status  | Link                                                                                                     |
+| :----------- | :-------------------------------------------------------------------- | :------ | :------------------------------------------------------------------------------------------------------- |
+| Computer     | Lenovo Ideapad 320-15ISK 80XH01DNIN                                   | Working | -                                                                                                        |
+| BIOS Version | LENOVO Insyde EFI(4WCN29WW)                                           | Working | -                                                                                                        |
+| CPU          | DualCore Intel Core i3, 2000 MHz (20 x 100)                           | Working | -                                                                                                        |
+| Chipset      | Intel Sunrise Point-LP, Intel Skylake-U                               | Working | -                                                                                                        |
+| Graphics     | Intel HD Graphics 520, NVIDIA GeForce 920MX (Using Intel GPU only)    | Working | [Guide](https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/) |
+| Audio        | Realtek ALC3240, Codec ID:10EC0230h / 17AA3809h                       | Working | [Guide](https://github.com/acidanthera/AppleALC/wiki/Installation-and-usage)                             |
+| Ethernet     | Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter()                 | Working | -                                                                                                        |
+| WiFi         | Intel(R) Dual Band Wireless-AC 3165                                   | Working | -                                                                                                        |
+| Bluetooth    | Intel(R) Wireless Bluetooth(R)                                        | Working | -                                                                                                        |
+| Touchpad     | I2C ELAN0608                                                          | Working | [Guide](Touchpad-Guide.md)                                                                               |
+| Keyboard     | -                                                                     | Working | -                                                                                                        |
+| Webcam       | Ven id: 0x04f2(Chicony Electronics Co.,Ltd.) Product id: 0xb5d8       | Working | -                                                                                                        |
+| Battery      | Serial Number: L16M2PB2- 1229 Manufacturer: SMP Device Name: L16M2PB2 | Working | -                                                                                                        |
 
 ### Modifications 🔨
 
