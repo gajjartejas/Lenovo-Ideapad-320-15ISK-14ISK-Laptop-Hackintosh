@@ -20,11 +20,11 @@
 [![Scan Status](https://scan.coverity.com/projects/21839/badge.svg)](https://scan.coverity.com/projects/21839)
 -->
 
-Goal of this repo is to run Mac os on Lenovo Ideapad 320 15ISK Laptop
+Goal of this repo is to run macOS on Lenovo Ideapad 320 15ISK Laptop
 
-|            macOS Mojave 10.14.6             |           macOS Catalina 10.15.6            |           macOS Big Sur 11.6            |          macOS Monterey 12.3          |          macOS Ventura 13.3.1           |
-| :-----------------------------------------: | :-----------------------------------------: | :-------------------------------------: | :-----------------------------------: | :-------------------------------------: |
-| ![alt text](10.14.x/10.14.6/Screenshot.png) | ![alt text](10.15.x/10.15.6/screenshot.png) | ![alt text](11.0.x/11.6/screenshot.png) | ![alt text](12.0/12.3/screenshot.png) | ![alt text](13.0/13.3.1/screenshot.png) |
+|            macOS Mojave 10.14.6             |           macOS Catalina 10.15.6            |           macOS Big Sur 11.6            |          macOS Monterey 12.3          |          macOS Ventura 13.3.1           |           macOS Sonoma 14.1           |
+| :-----------------------------------------: | :-----------------------------------------: | :-------------------------------------: | :-----------------------------------: | :-------------------------------------: |:-------------------------------------:|
+| ![alt text](10.14.x/10.14.6/Screenshot.png) | ![alt text](10.15.x/10.15.6/screenshot.png) | ![alt text](11.0.x/11.6/screenshot.png) | ![alt text](12.0/12.3/screenshot.png) | ![alt text](13.0/13.3.1/screenshot.png) | ![alt text](14.0/14.1/screenshot.png) |
 
 ## macOS Catalina to Big Sur direct upgrade note:
 
@@ -46,7 +46,7 @@ Go to [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)(**Detailed guide - Advanced
 
 ## Other Guide
 
-Go to [WIRELESS_CARD_BUYING_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported WiFi adapters and buying guide**)
+Go to [WIRELESS_CARD_BUYING_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported Wi-Fi adapters and buying guide**)
 
 ## About this Laptop
 
@@ -104,7 +104,7 @@ Go to [WIRELESS_CARD_BUYING_GUIDE.md](WIRELESS_CARD_BUYING_GUIDE.md)(**Supported
 | [IntelBTPatcher.kext](https://github.com/zxystd/IntelBTPatcher)                                               | A Lilu base patcher that fix Intel Bluetooth on Bigsur, Catalina, Mojave, High sierra etc, tested with Bigsur and Catalina all working good.                                                                                                                                                               |
 | [Lilu.kext](https://github.com/acidanthera/Lilu)                                                              | Arbitrary kext and process patching on macOS.                                                                                                                                                                                                                                                              |
 | [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X)                                       | RTL8111/8168/8411 PCI Express Gigabit Ethernet.                                                                                                                                                                                                                                                            |
-| [RestrictEvents.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X)                                       | Lilu Kernel extension for blocking unwanted processes causing compatibility issues on different hardware and unlocking the support for certain features restricted to other hardware.                                                                                                                      |
+| [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)                                       | Lilu Kernel extension for blocking unwanted processes causing compatibility issues on different hardware and unlocking the support for certain features restricted to other hardware.                                                                                                                      |
 | [RTCMemoryFixup.kext](https://github.com/acidanthera/RTCMemoryFixup)                                          | open source kernel extension providing a way to emulate some offsets in your CMOS (RTC) memory                                                                                                                                                                                                             |
 | [SMCBatteryManager.kext](https://github.com/acidanthera/VirtualSMC)                                           | Battery Status Monitoring.                                                                                                                                                                                                                                                                                 |
 | [SMCProcessor.kext](https://github.com/acidanthera/VirtualSMC)                                                | Processor Temp Monitoring.                                                                                                                                                                                                                                                                                 |
