@@ -22,9 +22,9 @@
 
 Goal of this repo is to run macOS on Lenovo Ideapad 320 15ISK Laptop
 
-|            macOS Mojave 10.14.6             |           macOS Catalina 10.15.6            |           macOS Big Sur 11.6            |          macOS Monterey 12.3          |          macOS Ventura 13.3.1           |           macOS Sonoma 14.1           |
+|            macOS Mojave 10.14.6             |           macOS Catalina 10.15.6            |           macOS Big Sur 11.6            |          macOS Monterey 12.3          |          macOS Ventura 13.3.1           |           macOS Sonoma 14.7.1           |
 | :-----------------------------------------: | :-----------------------------------------: | :-------------------------------------: | :-----------------------------------: | :-------------------------------------: |:-------------------------------------:|
-| ![alt text](10.14.x/10.14.6/Screenshot.png) | ![alt text](10.15.x/10.15.6/screenshot.png) | ![alt text](11.0.x/11.6/screenshot.png) | ![alt text](12.0/12.3/screenshot.png) | ![alt text](13.0/13.3.1/screenshot.png) | ![alt text](14.0/14.1/screenshot.png) |
+| ![alt text](10.14.x/10.14.6/Screenshot.png) | ![alt text](10.15.x/10.15.6/screenshot.png) | ![alt text](11.0.x/11.6/screenshot.png) | ![alt text](12.0/12.3/screenshot.png) | ![alt text](13.0/13.3.1/screenshot.png) | ![alt text](14.0/14.7.1/screenshot.png) |
 
 ## macOS Catalina to Big Sur direct upgrade note:
 
